@@ -1,0 +1,17 @@
+%clearfix {
+  &:before,
+  &:after {
+    clear: both;
+    content: '';
+  }
+  &:after {
+    display: table;
+    overflow: hidden;
+  }
+}
+
+%translate_50_50 {
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+}

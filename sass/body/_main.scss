@@ -1,0 +1,395 @@
+.wraper_booking {
+  border-top: 4px solid #ad9263;
+  border-bottom: 4px solid #ad9263;
+  position: relative;
+  overflow: hidden;
+  img {
+    height: auto;
+    min-height: 100%;
+    width: auto;
+    min-width: 100%;
+    max-width: none;
+    position: absolute;
+    @extend %translate_50_50;
+  }
+  .pos_rel {
+    position: relative;
+  }
+}
+
+.message_wraper {
+  position: absolute;
+  color: #fff;
+  top: 20px;
+  text-shadow: 0px 2px 0px #000;
+  text-align: center;
+  padding-right: 30px;
+  h1 {
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-family: 'Lato-Regular';
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    letter-spacing: 1.1px;
+  }
+}
+
+.form_wraper {
+  right: 0;
+  padding: 180px 0 30px;
+  form {
+    padding: 51px 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+    select,
+    input {
+      font-family: 'PlayfairDisplay-Regular';
+      font-size: 18px;
+      color: #8b8b8b;
+      width: 100%;
+      padding: 3px 10px 9px;
+      margin-bottom: 36px;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+    .select_time {
+      width: 45%;
+    }
+    .select_time_1 {
+      float: left;
+      margin-right: 20px;
+    }
+    .select_time_2 {
+      float: right;
+    }
+    .submit_btn {
+      font-size: 30px;
+      color: #fff;
+      padding: 28px 86px;
+      background-color: #ad9263;
+      border: none;
+    }
+  }
+
+
+
+@media (min-width: 480px) {
+  .message_wraper {
+  }
+  .form_wraper {
+    padding: 150px 0px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .message_wraper {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    h1 {
+    font-size: 60px;
+    margin-bottom: 6px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    form {
+      padding: 51px 64px;
+    }
+  }
+  .form_wraper {
+    padding: 81px 0 30px;
+    select,
+    input {
+      font-size: 22px;
+    }
+    .submit_btn {
+      padding: 28px 0;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .message_wraper {
+    top: auto;
+    bottom: 46px;
+    left: 4px;
+    h1 {
+    font-size: 84px;
+    }
+    h2 {
+      font-size: 38px;
+    }
+    form {
+      padding: 51px 64px;
+    }
+  }
+  .form_wraper {
+    padding: 60px 0 51px;
+    
+    form {
+      padding: 51px 55px 58px 64px;
+    }
+  }
+}
+@media (min-width: 1700px) {
+  .form_wraper {
+    .submit_btn {
+      font-size: 40px;
+    }
+    select,
+    input {
+      font-size: 30px;
+    }
+  }
+}
+
+
+// Services BLOCK
+
+.wraper_service {
+  padding: 86px 0 0;
+}
+.title_service {
+  text-align: center;
+  h1,
+  h2 {
+    font-family: 'PlayfairDisplay-Regular';
+    color: #000;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2{
+    font-size: 24px;
+    margin-top: 48px;
+    padding: 48px 0;
+    border-top: 3px solid #ad9263;
+    border-bottom: 3px solid #ad9263;
+    line-height: 1;
+  }
+  p {
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+    letter-spacing: -0.9px;
+    word-spacing: 0.3px;
+    margin: 96px 0;
+    line-height: 1.15;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .title_service {
+    h1 {
+      font-size: 92px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 32px;
+    }
+  }
+}
+
+
+.wraper_presentation {
+  padding-top: 7px;
+  overflow: hidden;
+
+}
+.present_main {
+  .present_img {
+    position: relative;
+    text-align: center;
+    img {
+      outline: 1px solid white;
+      outline-offset: -13px;
+      width: auto;
+    }
+    h1 {
+      font-family: 'PlayfairDisplay-Regular';
+      font-size: 30px;
+      font-weight: 400;
+      text-shadow: 0px 1px 0px #000;
+      color: #fff;
+      position: absolute;
+      @extend %translate_50_50;
+    }
+  }
+  .service_description {
+    padding-top: 104px;
+    .description_icon {
+      text-align: center;
+      min-height: 100px;
+      img {
+        display: inline-block;
+      }
+    }
+    p {
+      font-family: 'Lato-Regular';
+      font-size: 18px;
+      margin: 73px 40px;
+      line-height: 1.24;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .present_main {
+    .present_img {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .service_description {
+      p {
+        font-size: 18px;
+        margin: 73px 0;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .present_main {
+    .present_img {
+      h1 {
+        font-size: 40px;
+      }
+    }
+    .service_description {
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .present_main {
+    .service_description {
+     
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .present_main {
+    .present_img {
+      h1 {
+        font-size: 60px;
+        line-height: 1.2;
+      }
+    }
+    .service_description {
+       p {
+        margin: 73px 40px;
+      }
+    }
+  }
+}
+
+
+.contacts_title {
+  overflow: hidden;
+  padding: 28px 0;
+  text-align: center;
+  color: #000;
+  font-family: 'PlayfairDisplay-Regular';
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+    border-top: 3px solid #ad9263;
+    border-bottom: 3px solid #ad9263;
+    padding: 48px 0;
+    margin-top: 48px;
+    line-height: 1;
+  }
+}
+
+.contacts_main {
+  font-family: 'Lato-Regular';
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  padding-bottom: 28px;
+  li {
+    display: inline-block;
+    line-height: 1.2;
+    padding: 40px;
+    &:last-of-type {
+      padding-bottom: 0;
+      word-wrap: break-word;
+    }
+  }
+}
+
+
+.contact_map {
+  display: block;
+  line-height: 0;
+}
+
+@media (min-width: 1200px) {
+  .contacts_title {
+    h1 {
+      font-size: 90px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+  }
+  .contacts_main {
+    font-size: 30px;
+    li {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .contacts_main {
+    padding: 122px 120px 134px;
+    li:last-of-type {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+// @media (min-width: 768px) {
+//   .contacts_title {
+//     h1 {
+//       font-size: 90px;
+//     }
+//     h2 {
+//       font-size: 60px;
+//     }
+//   }
+//   .contacts_main {
+//     font-size: 30px;
+//     padding: 194px 120px 165px;
+//     li {
+//       padding-bottom: 0;
+//     }
+//   }
+// }

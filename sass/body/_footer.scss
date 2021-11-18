@@ -1,0 +1,37 @@
+footer {
+  background-color: #000;
+}
+.footer_menu {
+  padding: 69px 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  a {
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #b0b0b0;
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1700px) {
+  .footer_menu {
+    li {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 40px;
+      &:first-of-type {
+        margin-left: 58px;
+      }
+    }
+  }
+}

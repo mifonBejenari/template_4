@@ -1,0 +1,185 @@
+// main styles
+
+header {
+  background-color: #000;
+  text-align: center;
+}
+
+.header_wraper {
+  padding: 52px 0;
+}
+
+.logo_wraper {
+  a, 
+  img {
+    display: inline-block;
+  }
+}
+.logo_none {
+  display: none;
+}
+.menu {
+  position: relative;
+  a,
+  label {
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ad9263;
+    display: inline-block;
+    width: 100%;
+  }
+  label {
+  }
+  ul {
+    min-width: 166px;
+    max-width: 166px;
+  }
+}
+
+// Drop down button menu style on small display
+
+.menu {
+  input {
+    display:none;
+  }
+
+  label {
+    padding: 12px;
+    cursor: pointer;
+    min-width: 166px;
+    max-width: 166px;
+  }
+
+  label:hover,
+  input:checked ~ label {
+    background: #fff;
+    transition: background 0.3s;
+    border-bottom: 1px solid #ad9263;
+  }
+
+  input:checked ~ .menu_list {
+    max-height: 500px;
+    transition: max-height 0.3s ease-in;
+  }
+
+  .menu_list {
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    transition: max-height 0.3s ease-out;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 500;
+    a {
+      padding: 10px;
+      color: #ad9263;
+      text-decoration: none;
+      transition: background 0.3s;
+      white-space: nowrap;
+      border-bottom: 1px solid #ad9263;
+      &:hover {
+        background: #000;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .menu {
+    padding-top: 10px;
+    a,
+    label {
+      font-size: 24px ;
+    }
+    label,
+    .menu_list {
+      min-width: 300px; 
+      max-width: 300px; 
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    li {
+      display: inline-block;
+    }
+    label {
+      display: none;
+    }
+    .menu_list {
+      background-color: #000;
+      position: relative;
+      min-width: none;
+      max-width: none;
+      max-height: none;
+      a {
+        font-size: 24px ;
+        border-bottom: none;
+      }
+      a:hover {
+        background: #fff;
+      }
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .menu {
+    .menu_list {
+      margin-top: 24px;
+      li {
+        margin-right: 50px;
+        &:first-of-type {
+          margin-left: 16px; 
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+      a {
+        font-size: 30px;
+        word-spacing: -1px;
+      }
+    }
+  }
+}
+
+
+
+.fixed {
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  padding: 10px 0;
+  left: -50%;
+  transform: translateX(50%);
+  width: 100%;
+  .menu_list {
+    margin-top: 0;
+  }
+  .logo_none {
+    display: inline-block;
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .fixed {
+    .logo_none {
+      display: none;
+    }
+  }
+}
